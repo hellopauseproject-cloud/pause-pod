@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pause Pod — [Ditt Namn]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="toppen">
+    <div class="grain"></div>
+    <nav class="nav">
+      <span class="nav-logo">Pause Pod</span>
+      <ul class="nav-links">
+        <li><a href="#koncept">Koncept</a></li>
+        <li><a href="#testa">Testa</a></li>
+        <li><a href="#bidrag">Bidrag</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#dokumentation">Dokument</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-kurs">DP604I · Designprojekt 2026</p>
+      <h1 class="hero-title">Pause<br /><em>Pod</em></h1>
+      <p class="hero-sub">
+        Ett fygitalt system för avsiktliga pauser från mobiltelefonen.<br />
+        Ritualiserad övergång genom objekt, kropp och tid.
+      </p>
+      <p class="hero-namn">[Ditt Namn] — HKR</p>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scrolla</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ KONCEPT ░░ -->
+  <section class="section" id="koncept">
+    <div class="section-inner split">
+      <div class="split-text reveal">
+        <p class="label">01 — Konceptet</p>
+        <h2>Vad är<br /><em>Pause Pod?</em></h2>
+        <p>
+          Pause Pod är ett fygitalt system — en handgjord trälåda med inbyggd elektronik 
+          och en mobilapp — designat för att skapa en meningsfull, ritualiserad paus 
+          från skärmanvändning.
+        </p>
+        <p>
+          Genom en sekvens av fysiska handlingar — NFC-beröring, lockets öppning och 
+          kapacitiv beröring — leds användaren in i ett lugnt tillstånd. Lådan tar emot 
+          telefonen. Appen bekräftar pausen.
+        </p>
+        <p>
+          Designen utgår från autonomibevarande principer: användaren väljer aktivt att 
+          pausa, utan tvång.
+        </p>
+      </div>
+      <div class="split-visual reveal">
+        <!-- Byt ut mot riktig bild -->
+        <div class="image-placeholder">
+          <span>📷 Bild på Pause Pod-lådan</span>
+          <p>Ersätt med: &lt;img src="assets/bilder/ladan.jpg" alt="Pause Pod-lådan" /&gt;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TESTA ░░ -->
+  <section class="section section--dark" id="testa">
+    <div class="section-inner centered reveal">
+      <p class="label">02 — Interaktion</p>
+      <h2>Testa <em>designen</em></h2>
+      <p class="intro-text">
+        Appen går att testa direkt på din telefon. Ingen inloggning krävs.
+      </p>
+
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="test-icon">◉</div>
+          <h3>iOS</h3>
+          <p>Skanna QR-koden med kameran eller öppna via TestFlight.</p>
+          <!-- Byt mot riktig QR-bild -->
+          <div class="qr-placeholder">
+            <span>QR-kod iOS<br />(TestFlight)</span>
+            <p>Ersätt med: &lt;img src="assets/qr-ios.png" /&gt;</p>
+          </div>
+          <a href="#" class="btn">Öppna TestFlight →</a>
+        </div>
+
+        <div class="test-card">
+          <div class="test-icon">◎</div>
+          <h3>Android</h3>
+          <p>Ladda ner APK-filen direkt och installera på din enhet.</p>
+          <div class="qr-placeholder">
+            <span>QR-kod Android<br />(APK)</span>
+            <p>Ersätt med: &lt;img src="assets/qr-android.png" /&gt;</p>
+          </div>
+          <a href="#" class="btn">Ladda ner APK →</a>
+        </div>
+      </div>
+
+      <p class="note">
+        Notera: Appens fullständiga ritual kräver den fysiska lådan med NFC och BLE. 
+        Appen i isolering demonstrerar gränssnittet, pausflödet och röstnotifikationen.
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░ DESIGNBIDRAG ░░ -->
+  <section class="section" id="bidrag">
+    <div class="section-inner reveal">
+      <p class="label">03 — Kunskapsbidrag</p>
+      <h2>Designfrågor &amp;<br /><em>svar</em></h2>
+
+      <div class="bidrag-grid">
+        <div class="bidrag-item">
+          <span class="bidrag-nummer">I</span>
+          <h3>Hur kan ett fygitalt system designas för att stödja avsiktliga pauser?</h3>
+          <p>
+            Besvarad genom byggandet. Systemet visar att sekventiell fysisk interaktion — 
+            NFC, Hall-sensor, kapacitiv beröring — kan fungera som rituell tröskel och 
+            skilja pausens start från vardaglig telefonanvändning.
+          </p>
+          <span class="bidrag-status besvarad">Besvarad</span>
+        </div>
+
+        <div class="bidrag-item">
+          <span class="bidrag-nummer">II</span>
+          <h3>Vilken roll spelar en egeninspelade röstnotifikation som interventionsform?</h3>
+          <p>
+            Undersöks i examensarbetet. Rösten simuleras som ett inkommande samtal 
+            från användaren till sig själv — ett autonomibevarande avbrott i 
+            vanemässig telefoanvändning.
+          </p>
+          <span class="bidrag-status pagaende">Pågående studie</span>
+        </div>
+
+        <div class="bidrag-item">
+          <span class="bidrag-nummer">III</span>
+          <h3>Vad händer med pausupplevelsen när övergången är kroppslig och flerlagrad?</h3>
+          <p>
+            Nästa fas. Kräver färdig artefakt och riktiga användare. Frågan är 
+            formulerad — svaret byggs.
+          </p>
+          <span class="bidrag-status kommande">Nästa fas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROCESS ░░ -->
+  <section class="section section--warm" id="process">
+    <div class="section-inner reveal">
+      <p class="label">04 — Process</p>
+      <h2>Från idé till<br /><em>artefakt</em></h2>
+
+      <div class="process-grid">
+        <div class="process-item">
+          <div class="image-placeholder small">
+            <span>Skiss / moodboard</span>
+          </div>
+          <h4>Konceptutveckling</h4>
+          <p>Ritualiserad paus, embodied interaction, Research through Design.</p>
+        </div>
+
+        <div class="process-item">
+          <div class="image-placeholder small">
+            <span>Hårdvara / kretsar</span>
+          </div>
+          <h4>Hårdvara</h4>
+          <p>LilyGO T-Display S3, ESP32, TTP223-sensorer, Hall-sensor, BLE &amp; NFC.</p>
+        </div>
+
+        <div class="process-item">
+          <div class="image-placeholder small">
+            <span>Appen / UI</span>
+          </div>
+          <h4>Appen</h4>
+          <p>React Native / Expo. Andningsanimation, pausflöde, röstinspelning.</p>
+        </div>
+
+        <div class="process-item">
+          <div class="image-placeholder small">
+            <span>Lådan / snickeri</span>
+          </div>
+          <h4>Den fysiska lådan</h4>
+          <p>Trä, 23×15×10 cm. Handgjord. Fronpanel med display och touch-elektroder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ REFLEKTION ░░ -->
+  <section class="section" id="reflektion">
+    <div class="section-inner narrow reveal">
+      <p class="label">05 — Reflektion</p>
+      <h2><em>Vad jag lärt mig</em><br />genom att bygga</h2>
+      <p>
+        [Din reflektionstext här. Skriv om vad designprocessen lärde dig som du 
+        inte kunde ha lärt dig bara av att tänka. Vad överraskade dig? Vad visade 
+        sig omöjligt att svara på utan en färdig artefakt?]
+      </p>
+      <p>
+        [Fortsätt gärna med en mening om kopplingen mellan det fysiska och det 
+        digitala — vad hände när de möttes?]
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░ DOKUMENTATION ░░ -->
+  <section class="section section--dark" id="dokumentation">
+    <div class="section-inner centered reveal">
+      <p class="label">06 — Dokumentation</p>
+      <h2>Skriftlig <em>del</em></h2>
+      <p class="intro-text">
+        Examensarbetet (vetenskaplig artikel) undersöker hur en egeninspelade 
+        röstnotifikation upplevs som intervention mot vanemässig mobilanvändning.
+      </p>
+      <div class="doc-links">
+        <a href="#" class="btn btn--large">Läs examensarbetet (PDF) →</a>
+        <a href="#" class="btn btn--outline">Källkod på GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <p>Pause Pod · [Ditt Namn] · DP604I · HKR 2026</p>
+    <a href="#toppen" class="footer-top">↑ Tillbaka upp</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
